@@ -3,7 +3,8 @@ import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Link as LinkIcon, 
-  Calendar, 
+  Calendar,
+  Edit2, 
   QrCode, 
   Lock, 
   BarChart2, 
