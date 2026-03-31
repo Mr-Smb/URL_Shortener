@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Link as LinkIcon, 
+  Link as LinkIcon,
   Calendar,
-  Edit2, 
-  QrCode, 
-  BarChart2 
-  Lock, 
-  ChevronDown, 
-  ChevronUp, 
-  Settings2, 
+  Edit2,
+  QrCode,
+  Lock,
+  BarChart2,
+  ChevronDown,
+  ChevronUp,
+  Settings2,
   Link2,
   Copy,
   Clock,
