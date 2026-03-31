@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-500;
+    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+  }
+}
+
+.light-bg {
+  background-color: #F8FAFC;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(210,100%,96%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(220,100%,97%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(215,100%,95%,1) 0, transparent 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dark-bg {
+  background-color: #0f172a;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(220,90%,12%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(210,95%,8%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(215,80%,10%,1) 0, transparent 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f8fafc;
+}
+
+@layer components {
+  .toggle-checkbox:checked {
+    transform: translateX(100%);
+    border-color: #3b82f6;
+  }
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #2563ea;
+  }
+  .toggle-checkbox {
+    left: 0;
+    z-index: 1;
+    border-color: #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .toggle-label {
+    background-color: #cbd5e1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .dark .toggle-checkbox {
+    border-color: #475569;
+  }
+  .dark .toggle-label {
+    background-color: #334155;
+  }
+  .dark .toggle-checkbox:checked {
+    border-color: #60a5fa;
+  }
+  .dark .toggle-checkbox:checked + .toggle-label {
+    background-color: #3b82f6;
+  }
+
+  /* Glassmorphism Classes */
+  .glass-panel {
+    @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white/40 dark:border-slate-700/50 shadow-xl;
+  }
+  .glass-card {
+    @apply bg-white/60 dark:bg-slate-800/60 backdrop-blur-lg border border-white/50 dark:border-slate-600/50 shadow-lg;
+  }
+}
