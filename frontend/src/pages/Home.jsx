@@ -7,7 +7,6 @@ import {
   Edit2, 
   QrCode, 
   Lock, 
-  BarChart2, 
   ChevronDown, 
   ChevronUp, 
   Settings2, 
