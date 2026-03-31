@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Link as LinkIcon, 
   Calendar, 
-  Globe, 
   QrCode, 
   Lock, 
   BarChart2, 
