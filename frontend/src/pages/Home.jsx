@@ -6,6 +6,7 @@ import {
   Calendar,
   Edit2, 
   QrCode, 
+  BarChart2 
   Lock, 
   ChevronDown, 
   ChevronUp, 
